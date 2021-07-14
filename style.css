@@ -1,84 +1,92 @@
 /*----------
     common style 
         ---------*/
-*{
+* {
     margin: 0;
     padding: 0;
- box-sizing: border-box; 
+    box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
 }
 
 /* Header style */
 
-.header_main{
+.header_main {
     background-color: rgb(27, 27, 133);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: 100%;
     height: 677px;
     transition-property: background-color;
     transition-duration: 2s;
 }
-.header_main:hover{
+
+.header_main:hover {
     background-color: blueviolet;
 }
 
-.left_header{
+.left_header {
     width: 485px;
     height: 270px;
     padding-left: 50px;
 }
-.header_title{
+
+.header_title {
     font-weight: bold;
     font-size: 64px;
     color: #FFFFFF;
     padding-bottom: 15px;
 }
-.watch_live{
+
+.watch_live {
     text-decoration: none;
     background-color: #E02C6D;
     color: #FFFFFF;
     padding: 10px 24px;
     margin-top: 5px;
     border-radius: 3px;
-    transition-property:  color;
+    transition-property: color;
     transition-duration: 2s;
-    
+
 }
-.watch_live:hover{
-     background-color: #00fff0;
-     color: black;
-    
+
+.watch_live:hover {
+    background-color: #00fff0;
+    color: black;
+
 }
-.watch_live .fas{
+
+.watch_live .fas {
     padding-left: 4px;
 }
-.right_header{
+
+.right_header {
     margin-right: 2px;
     width: 760px;
 }
 
-.right_header img{
+.right_header img {
     width: 556px;
     height: 460px;
     margin-left: 200px;
     margin-top: 100px;
-    
+
 }
 
 /* Main style  */
-.players{
+.players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 1px;
-    grid-column-gap:1px;
+    grid-column-gap: 1px;
     margin: 30px;
 }
-.player{
+
+.player {
     /* border: 2px solid red; */
     height: 420px;
     width: 330px;
@@ -87,36 +95,40 @@ body{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
-.player_profile{
+
+.player_profile {
     /* border: 2px solid rgb(115, 8, 238); */
     height: 400px;
     width: 300px;
-    padding: 5px; 
+    padding: 5px;
 }
-.player_profile img{
+
+.player_profile img {
     height: 256px;
     width: 300px;
     margin: 8px;
     padding-left: 2px;
 }
 
-.player_disc{
+.player_disc {
     padding: 5px;
     margin-left: 5px;
 }
-.player_name{
+
+.player_name {
     color: #18191F;
     font-size: 28px;
     font-weight: bold;
 }
-.player_info{
+
+.player_info {
     color: #6C6C6C;
     font-size: 16px;
     font-weight: normal;
 }
 
 /* extra container style  */
-.container{
+.container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -124,7 +136,7 @@ body{
 
 /* form style */
 
-.container_left{
+.container_left {
     width: 360px;
     background-color: rgb(27, 27, 133);
     opacity: 0.9;
@@ -132,25 +144,30 @@ body{
     border-radius: 10px;
     margin-left: 130px;
 }
-.container form{
+
+.container form {
     width: 100%;
     text-align: center;
     padding: 25px 20px;
 }
-form h1{
+
+form h1 {
     padding-bottom: 20px;
 }
-form .id{
+
+form .id {
     position: relative;
 }
-.id i{
+
+.id i {
     position: absolute;
     font-size: 20px;
     top: 50%;
     right: 20px;
     transform: translatey(-50%);
 }
-form input{
+
+form input {
     width: 100%;
     height: 50px;
     margin: 4px 0;
@@ -160,19 +177,22 @@ form input{
     padding: 0 15px;
     padding-right: 45px;
     font-size: 20px;
-} 
-form input{
+}
+
+form input {
     font-size: 30px;
 }
- form textarea{
+
+form textarea {
     padding: 5px 15px;
     border-radius: 3px;
     background: #4e3845;
-     border: 1px solid #c976a6;
+    border: 1px solid #c976a6;
     width: 100%;
     font-size: 20px;
-} 
-form button{
+}
+
+form button {
     margin-top: 5px;
     border: none;
     background: #00fff0;
@@ -183,51 +203,60 @@ form button{
     font-weight: 800;
     cursor: pointer;
 }
-form input:focus, form textarea:focus{
+
+form input:focus,
+form textarea:focus {
     border: 1px solid #00fff0;
     color: #00fff0;
     transition: all 1s ease;
 }
+
 form input:focus::placeholder,
-form textarea:focus::placeholder{
+form textarea:focus::placeholder {
     padding-left: 4px;
     color: #00fff0;
     transition: all 1s ease;
 }
-form input:focus + i{
+
+form input:focus+i {
     color: #00fff0;
     transition: all 1s ease;
 }
-form button:hover{
+
+form button:hover {
     background-color: #ec0d88;
     color: white;
     transition: all 1s ease;
 }
 
 /* calender style  */
-.calender_detail{
+.calender_detail {
     width: 560px;
     background-color: rgb(27, 27, 133);
     opacity: 0.9;
     color: white;
     border-radius: 10px;
-    
+
 }
-.calender_detail h1{
+
+.calender_detail h1 {
     padding-top: 15px;
     text-align: center;
 }
-.calendar{
+
+.calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 3em repeat(7,1fr);
-    grid-gap: 2em;
+    grid-template-rows: 3em repeat(7, 1fr);
+    grid-gap: 5px;
     height: 400px;
     width: 100%;
     text-align: center;
     padding: 30px 30px;
 }
-.date, .day{
+
+.date,
+.day {
     background-color: #00fff0;
     font-size: 1em;
     display: flex;
@@ -235,37 +264,43 @@ form button:hover{
     align-items: center;
     border-radius: 2px;
 }
-.other-month{
+
+.other-month {
     background-color: #ec0d88;
 }
 
-.day{
+.day {
     background: #4e3845;
     font-size: 2em;
 }
 
 /* footer style  */
 
-.logo{
-   text-align: center;
+.logo {
+    text-align: center;
 }
-.logo img{
+
+.logo img {
     width: 483px;
     height: 110px;
     margin-top: 80px;
     margin-bottom: 30px;
 }
-.icons{
+
+.icons {
     text-align: center;
 }
-.fab{
+
+.fab {
     height: 32px;
     width: 50px;
 }
-.copyright{
+
+.copyright {
     text-align: center;
 }
-.copyright_detail{
+
+.copyright_detail {
     font-size: 18px;
     font-weight: 700;
 }

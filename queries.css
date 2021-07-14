@@ -1,16 +1,103 @@
-@media only screen and (max-width:575px) {
+@media screen and (max-width:575px) {
     .header_main {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .players,
-    .container,
-    .footer {
-        display: none;
+        /* grid-template-columns: repeat(1, 1fr); */
+        display: block;
+        border: 1px solid red;
+        width: 100%;
     }
 
     .left_header {
         width: 100%;
     }
+
+    .header_title {
+        font-weight: bold;
+        font-size: 37px;
+        color: #FFFFFF;
+        padding-bottom: 15px;
+    }
+
+    .right_header img {
+        width: 100%;
+
+        height: unset;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .right_header {
+        width: 100%;
+    }
+
+    .players {
+        display: block;
+    }
+
+    .player {
+        /* border: 2px solid red; */
+        height: unset;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 40px rgb(0 0 0 / 25%);
+        border-radius: 5px;
+    }
+
+    .player_profile {
+        /* border: 2px solid rgb(115, 8, 238); */
+        height: unset;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .player_profile img {
+        height: unset;
+        width: 93%;
+        /* margin: 8px; */
+        padding-left: 2px;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container_left {
+        width: 100%;
+        background-color: rgb(27, 27, 133);
+        opacity: 0.9;
+        color: white;
+        border-radius: 10px;
+        margin-left: unset;
+        margin-bottom: 15px;
+    }
+
+    .calender_detail {
+        width: 100%;
+    }
+
+    .calender {
+        grid-gap: 5px;
+    }
+
+    .logo img {
+        width: 74%;
+        height: unset;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .fab {
+        height: 37px;
+        width: 35px;
+    }
+
+    .copyright_detail {
+        font-size: 14px;
+    }
+
 
 }
